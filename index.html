@@ -1,8 +1,319 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Morning Brief Ultra Pro Max Tier</title><style>:root{color-scheme:light dark}body{font:16px/1.6 system-ui,sans-serif;max-width:42rem;margin:2rem auto;padding:0 1rem}a{color:#1a56c4}nav{margin-bottom:1.5rem}</style></head><body><nav><a href="index.html">Home</a> · <a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms of service</a></nav>
-<h1>Morning Brief Ultra Pro Max Tier</h1>
-<p>Morning Brief Ultra Pro Max Tier is a small personal program that reads its owner's own Google Calendar, Gmail and Google Tasks, and writes one daily summary page for that owner. It runs on the owner's own computer. It is read-only: it can view data but cannot send, change or delete anything.</p>
-<h2>What it asks Google for</h2>
-<ul><li>Google Calendar: view events (calendar.readonly)</li><li>Gmail: view messages and settings (gmail.readonly)</li><li>Google Tasks: view tasks (tasks.readonly)</li></ul>
-<p>The data is processed on the owner's computer and is not sent to the developer or to any third party. See the <a href="privacy.html">privacy policy</a> and <a href="terms.html">terms of service</a>.</p>
-<p>Contact: crucifixonroblox@gmail.com</p>
-</body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Morning Brief Ultra Pro Max Tier</title>
+<meta name="description" content="Morning Brief Ultra Pro Max Tier is a personal, self-hosted, read-only program that turns its owner's Google Calendar, Gmail and Google Tasks into one page each morning.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0c0a09" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html"><img src="assets/icon.svg" alt="" width="20" height="20"><span>Morning Brief Ultra Pro Max Tier</span></a>
+    <nav aria-label="Primary">
+      <ul class="nav-list">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="privacy.html">Privacy policy</a></li>
+        <li><a href="terms.html">Terms of service</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" aria-labelledby="page-title">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <p class="pill"><span class="pill-dot" aria-hidden="true"></span>Personal · Self-hosted · Read-only</p>
+          <h1 id="page-title">Morning Brief Ultra Pro Max Tier</h1>
+          <p class="lede">A personal, self-hosted program that reads its owner's Google Calendar, Gmail and Google Tasks once a day, changes nothing, and writes a single page that says what the day looks like.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#how">How it works</a>
+            <a class="btn btn-secondary" href="privacy.html">Privacy policy</a>
+          </div>
+        </div>
+
+        <figure class="preview">
+          <div class="preview-window" aria-hidden="true">
+            <div class="preview-bar"><span></span><span></span><span></span><span class="preview-file">latest.html</span></div>
+            <div class="preview-body">
+              <p class="preview-date">Wednesday, October 7</p>
+              <p class="preview-sub">Morning brief · made 5:00 AM</p>
+              <div class="preview-card">
+                <p class="preview-glance">A steady day: Chemistry this morning, a club meeting at lunch and a study group in the afternoon. The lab report task is overdue, and the essay outline is due tonight.</p>
+                <ol class="preview-prio">
+                  <li>Finish the lab report first <span>(task, overdue 1 day)</span></li>
+                  <li>Submit the essay outline before tonight <span>(task, due today)</span></li>
+                </ol>
+                <ul class="preview-chips">
+                  <li>3 events today</li>
+                  <li>1 due today</li>
+                  <li class="is-bad">1 overdue or missing</li>
+                  <li>12 unread</li>
+                </ul>
+              </div>
+              <div class="preview-card">
+                <p class="preview-label">Today</p>
+                <ul class="preview-rows">
+                  <li><span class="t">8:30–9:20 AM</span><span>Chemistry</span></li>
+                  <li><span class="t">12:15–12:55 PM</span><span>Club meeting</span></li>
+                  <li><span class="t">3:30–4:30 PM</span><span>Study group</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <figcaption>Illustration of a brief page, with made-up data.</figcaption>
+        </figure>
+      </div>
+
+      <dl class="facts">
+        <div><dt>Runs once a day</dt><dd>05:00</dd></div>
+        <div><dt>Google permissions, all read-only</dt><dd>3</dd></div>
+        <div><dt>AI summary, no cloud AI</dt><dd>On-device</dd></div>
+        <div><dt>Dated briefs kept by default</dt><dd>30 days</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="section" id="sources" aria-labelledby="sources-title">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Sources</p>
+        <h2 id="sources-title">What it reads</h2>
+        <p>Google Calendar, Gmail and Google Tasks are the core of the brief. Canvas, weather and news headlines are optional extras. Every source is read, never written to.</p>
+      </div>
+
+      <ul class="cards cards-3">
+        <li class="card">
+          <p class="card-tag"><span class="tag tag-mono">calendar.readonly</span></p>
+          <h3>Google Calendar</h3>
+          <p>Today's and tomorrow's events from the primary calendar, chosen calendars, or every calendar shown in Google Calendar. Cancelled events, declined invitations and working-location entries are skipped.</p>
+        </li>
+        <li class="card">
+          <p class="card-tag"><span class="tag tag-mono">gmail.readonly</span></p>
+          <h3>Gmail</h3>
+          <p>By default, unread inbox mail from the last two days, leaving out Promotions, Social and Forums. Only the sender, subject, Google's short preview, labels, received time and thread ID are fetched, never full message bodies.</p>
+        </li>
+        <li class="card">
+          <p class="card-tag"><span class="tag tag-mono">tasks.readonly</span></p>
+          <h3>Google Tasks</h3>
+          <p>Overdue tasks, tasks due within three days, and a few tasks with no due date. Completed tasks are skipped.</p>
+        </li>
+        <li class="card">
+          <p class="card-tag"><span class="tag">Optional</span><span class="tag">Off by default</span></p>
+          <h3>Canvas LMS</h3>
+          <p>Planner items for the next seven days and missing submissions, read with a personal access token. The brief warns seven days before the expiry date the owner enters for that token.</p>
+        </li>
+        <li class="card">
+          <p class="card-tag"><span class="tag">Optional</span><span class="tag">No API key</span></p>
+          <h3>Weather</h3>
+          <p>Current conditions and the forecast from Open-Meteo, which receives only the coordinates, the time zone and the units from the app's configuration, never any Google data.</p>
+        </li>
+        <li class="card">
+          <p class="card-tag"><span class="tag">Optional</span><span class="tag">Off by default</span></p>
+          <h3>News headlines</h3>
+          <p>A few headlines from plain RSS or Atom feeds. Feeds that declare a DTD are refused, and so are feeds larger than 2 MB.</p>
+        </li>
+      </ul>
+      <p class="note">Up to three Google accounts can be connected: two personal accounts and an optional school account, which is off by default.</p>
+    </div>
+  </section>
+
+  <section class="section" id="how" aria-labelledby="how-title">
+    <div class="container split">
+      <div class="split-head">
+        <p class="eyebrow">How it works</p>
+        <h2 id="how-title">From a 05:00 timer to one finished page</h2>
+        <p>Plain code does the fetching, merging and arithmetic. A small language model on the same computer only writes the short summary at the top.</p>
+      </div>
+
+      <ol class="steps">
+        <li class="step">
+          <p class="step-meta">05:00</p>
+          <h3>A timer starts the run</h3>
+          <p>A scheduled timer on the owner's computer starts the brief every morning. If the computer was off at 05:00, it runs once as soon as the computer is back on.</p>
+        </li>
+        <li class="step">
+          <p class="step-meta">Read</p>
+          <h3>It collects the day, read-only</h3>
+          <p>It asks Google for events, recent unread mail and open tasks for each connected account, then reads any optional sources that are turned on. If one source fails, the rest of the brief is still made.</p>
+        </li>
+        <li class="step">
+          <p class="step-meta">Merge</p>
+          <h3>Code puts it in order</h3>
+          <p>The same invitation on two calendars is shown once, overlapping busy events are flagged as conflicts, and relative dates such as “due tomorrow” and every count are computed by code. Each item gets a short ID, like E1 for an event or T1 for a task.</p>
+        </li>
+        <li class="step">
+          <p class="step-meta">Summarize</p>
+          <h3>A local model writes the overview</h3>
+          <p>A small model running through Ollama on the same computer writes a two-to-four-sentence overview and up to three priorities. Any item ID it gives is checked against the real list, and made-up IDs are discarded. If the model is unavailable, the brief is made without it.</p>
+        </li>
+        <li class="step">
+          <p class="step-meta">Done</p>
+          <h3>One page, ready to read</h3>
+          <p>The brief is saved as private files on the computer, as a web page and a Markdown copy. Dated copies are deleted after 30 days by default while the app runs. If the owner turns it on, a phone notification with the day's counts follows.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" id="read-only" aria-labelledby="read-only-title">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Read-only by design</p>
+        <h2 id="read-only-title">What it cannot do</h2>
+        <p>Some limits are enforced by Google, because the app only holds read-only permissions. Others are choices made in the code.</p>
+      </div>
+
+      <div class="limits">
+        <div class="limit">
+          <h3>Cannot, by permission</h3>
+          <p>With only read-only access, Google does not let it:</p>
+          <ul>
+            <li>Send, reply to, forward or draft email</li>
+            <li>Delete, archive, label or mark messages as read</li>
+            <li>Create, change or delete calendar events</li>
+            <li>Create, complete or delete tasks</li>
+          </ul>
+        </div>
+        <div class="limit">
+          <h3>Does not, by design</h3>
+          <p>Some things are left out on purpose. It does not:</p>
+          <ul>
+            <li>Download full email bodies or attachments</li>
+            <li>Contain any code that writes to Google, Gmail or Canvas</li>
+            <li>Send data to the developer or to a cloud AI service</li>
+            <li>Have ads, tracking, user accounts or a server run by the developer</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="permissions" aria-labelledby="permissions-title">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Google permissions</p>
+        <h2 id="permissions-title">Three permissions, all read-only</h2>
+        <p>These are the only Google permissions it requests. It never asks for send, modify, compose, delete or write access.</p>
+      </div>
+
+      <div class="table-wrap">
+        <table class="perm-table" role="table">
+          <caption class="visually-hidden">Google permissions requested by Morning Brief Ultra Pro Max Tier</caption>
+          <thead role="rowgroup">
+            <tr role="row">
+              <th scope="col" role="columnheader">Permission</th>
+              <th scope="col" role="columnheader">What it allows</th>
+              <th scope="col" role="columnheader">Why the app needs it</th>
+            </tr>
+          </thead>
+          <tbody role="rowgroup">
+            <tr role="row">
+              <th scope="row" role="rowheader">Google Calendar, read-only <span class="scope-url">https://www.googleapis.com/auth/<wbr>calendar.readonly</span></th>
+              <td role="cell" data-label="What it allows">View events on the calendars the account can access. It cannot create, change or delete events.</td>
+              <td role="cell" data-label="Why the app needs it">To list today's and tomorrow's events, skip invitations the owner declined, and flag events that overlap, including across accounts.</td>
+            </tr>
+            <tr role="row">
+              <th scope="row" role="rowheader">Gmail, read-only <span class="scope-url">https://www.googleapis.com/auth/<wbr>gmail.readonly</span></th>
+              <td role="cell" data-label="What it allows">View email messages and settings. It cannot send, change, label or delete mail.</td>
+              <td role="cell" data-label="Why the app needs it">To show the sender, subject and Google's short preview of recent unread inbox mail, plus the inbox's unread count. Full message bodies are never fetched.</td>
+            </tr>
+            <tr role="row">
+              <th scope="row" role="rowheader">Google Tasks, read-only <span class="scope-url">https://www.googleapis.com/auth/<wbr>tasks.readonly</span></th>
+              <td role="cell" data-label="What it allows">View task lists and tasks. It cannot create, complete or delete tasks.</td>
+              <td role="cell" data-label="Why the app needs it">To show overdue tasks, tasks due within three days, and a few tasks with no due date.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">Sign-in uses Google's standard OAuth flow for desktop apps, with PKCE. Access can be removed at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+    </div>
+  </section>
+
+  <section class="section" id="data" aria-labelledby="data-title">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Data handling</p>
+        <h2 id="data-title">Google data is processed on the owner's computer</h2>
+        <p>A short summary. The privacy policy has the details.</p>
+      </div>
+
+      <ul class="cards cards-2">
+        <li class="card">
+          <h3>Processed locally</h3>
+          <p>Google data is processed only on the computer the program runs on. It is not sent to the developer, and the developer runs no servers.</p>
+        </li>
+        <li class="card">
+          <h3>Summarized on-device</h3>
+          <p>The language model runs on that same computer. No cloud AI service sees the data, and it is not used to train AI models.</p>
+        </li>
+        <li class="card">
+          <h3>Private, owner-only files</h3>
+          <p>Each brief is saved as owner-only files, and dated copies are deleted after 30 days by default while the app runs. Login tokens are kept in owner-only files and are never printed or logged.</p>
+        </li>
+        <li class="card">
+          <h3>Never sold, no advertising</h3>
+          <p>Nothing is sold or used for advertising, and nothing is sent to the developer. Two optional extras, both off by default, can send information beyond the computer: a phone notification through a server the owner chooses, with only counts by default, and a web viewer the owner can make reachable on their home network, for example from their phone.</p>
+        </li>
+      </ul>
+      <a class="more-link" href="privacy.html">Read the full privacy policy <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+
+  <section class="section" id="about" aria-label="Who it is for and contact">
+    <div class="container duo">
+      <div class="panel">
+        <p class="eyebrow">Who it is for</p>
+        <h2>One person: its owner</h2>
+        <p>Morning Brief Ultra Pro Max Tier is a personal, self-hosted tool, built by a student for their own mornings. It is not a public service: there is nothing to sign up for, there are no user accounts, and the developer runs no servers.</p>
+        <p>The source code is not published. This site describes the app and hosts the privacy policy and terms of service shown on its Google sign-in screen.</p>
+      </div>
+      <div class="panel">
+        <p class="eyebrow">Contact</p>
+        <h2>Questions?</h2>
+        <p>For anything about the app, this site or its policies, send an email.</p>
+        <a class="email" href="mailto:crucifixonroblox@gmail.com">crucifixonroblox@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="brand" href="index.html"><img src="assets/icon.svg" alt="" width="20" height="20"><span>Morning Brief Ultra Pro Max Tier</span></a>
+      <p class="footer-tagline">A personal, self-hosted, read-only morning digest.</p>
+    </div>
+    <nav class="footer-nav-col" aria-label="Footer">
+      <p class="footer-heading">Pages</p>
+      <ul class="footer-links">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="privacy.html">Privacy policy</a></li>
+        <li><a href="terms.html">Terms of service</a></li>
+      </ul>
+    </nav>
+    <div class="footer-contact">
+      <p class="footer-heading">Contact</p>
+      <p><a href="mailto:crucifixonroblox@gmail.com">crucifixonroblox@gmail.com</a></p>
+    </div>
+  </div>
+  <div class="container footer-legal">
+    <div class="footer-legal-inner">
+      <p>Morning Brief Ultra Pro Max Tier is not affiliated with or endorsed by Google.</p>
+      <p>Google, Gmail, Google Calendar and Google Tasks are trademarks of Google LLC.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
