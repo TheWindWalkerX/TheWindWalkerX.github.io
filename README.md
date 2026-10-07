@@ -58,7 +58,7 @@ Reading this README may cause:
 - "Wait, why did I read all of that"
 - Mild existential dread (Monday-related)
 
-If you experience a reading session longer than 4 hours, **touch grass** and consult a doctor, a friend, or at least a window. 🪟
+If you have been reading this for more than 20 minutes, **touch grass** and check in with a friend, a pet, or at least a window. 🪟
 
 ## 🤔 WHAT IS THIS (in human words)
 
